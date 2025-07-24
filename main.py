@@ -6,5 +6,5 @@ app = FastAPI()
 
 @app.get("/")
 def predict_iris(sl:float,sw:float,pl:float,pw:float):
-    result = model.predict([[sl,sw,pl,pw]]))
+    result = model.predict([[sl,sw,pl,pw]])
     return {"Predicted Species is:":int(result[0])}
